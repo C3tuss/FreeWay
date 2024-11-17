@@ -7,6 +7,7 @@ let imagemCarro1;
 let imagemCarro2;
 let imagemCarro3;
 let imagemCarros;
+let imagemCoracao;
 
 //sons
 let somDaTrilha;
@@ -21,6 +22,7 @@ function preload(){
     imagemCarro2 = loadImage("Imagens/carro-2.png");
     imagemCarro3 = loadImage("Imagens/carro-3.png");
     imagemCarros = [imagemCarro1, imagemCarro2, imagemCarro3, imagemCarro1, imagemCarro2, imagemCarro3];
+    imagemCoracao = loadImage("Imagens/coracao.png");
 
     somDaTrilha = loadSound("sons/trilha.mp3");
     somDaColisao = loadSound("sons/colidiu.mp3");

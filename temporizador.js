@@ -1,5 +1,5 @@
 let tempoInicial;
-let duracao = 3 * 1000; // 40 segundos em milissegundos
+let duracao = 100 * 1000; // 40 segundos em milissegundos
 let tempoRestante;
 
 // Função para mostrar o temporizador
@@ -19,7 +19,7 @@ function score(){
 
 // Função para exibir a tela de fim de jogo
 function telaFimDeJogo() {
-    
+
     //Mostra os carros de fundo
     background(imagemDaEstrada);
     mostraCarro();

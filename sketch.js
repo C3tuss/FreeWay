@@ -25,9 +25,10 @@ function draw() {
         incluiPontos();
         marcaPonto();
         incluiTemporizador();
+        desenhaVidas();
 
         // Verifica se o tempo acabou
-        if (tempoRestante === 0) {
+        if (tempoRestante === 0 || vidas === 0) {
             jogoAtivo = false; // Alterar estado do jogo
         }
     } else {

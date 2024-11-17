@@ -3,6 +3,7 @@ let yAtor = 366;
 let xAtor = 100;
 let colisao = false;
 let meusPontos = 0;
+let vidas = 3;
 
 function mostraAtor(){
     image(imagemDoAtor, xAtor, yAtor, 30, 30);
@@ -27,7 +28,10 @@ function verificaColisao(){
         voltaAtorPosicaoInicial();
         somDaColisao.play();
         if(meusPontos > 0){
-            meusPontos -= 1;
+            meusPontos --;
+        }
+        if(vidas > 0){
+            vidas --;
         }
       }
     }
@@ -54,5 +58,11 @@ function marcaPonto(){
       somDoPonto.play();
       voltaAtorPosicaoInicial();
       
+    }
+}
+
+function desenhaVidas() {
+    for (let i = 0; i < vidas; i++) {
+        image(imagemCoracao, 400 + i * 20, 5, 30, 30); // Desenha os corações em linha
     }
 }
