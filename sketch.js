@@ -8,6 +8,13 @@ function setup() {
 
     // Inicializa o tempo
     tempoInicial = millis();
+
+    // Cria o botão de replay
+    botaoReplay = createButton('Replay');
+    botaoReplay.position(width / 2 - 50, 290);
+    botaoReplay.size(100, 40);
+    botaoReplay.mousePressed(reiniciarJogo); // Define a ação quando pressionado
+    botaoReplay.hide(); // Esconde o botão no início do jogo
 }
 
 function draw() {

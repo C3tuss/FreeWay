@@ -36,4 +36,17 @@ function telaFimDeJogo() {
     fill(color(255, 0, 0));
     text("Fim de Jogo!", width / 2, height / 2);
     score();
+
+    // Exibe o botão de replay
+    botaoReplay.show();
+
+}
+
+function reiniciarJogo() {
+    jogoAtivo = true;
+    tempoInicial = millis();
+    tempoRestante = duracao;
+    vidas = 3;
+    meusPontos = 0;
+    botaoReplay.hide(); // Esconde o botão após o replay
 }
