@@ -26,7 +26,10 @@ function verificaColisao(){
       colisao = collideRectCircle(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 15)
       if (colisao){
         voltaAtorPosicaoInicial();
+        somDaColisao.setVolume(0.3);
+        somDoGrito.setVolume(0.3);
         somDaColisao.play();
+        somDoGrito.play();
         if(meusPontos > 0){
             meusPontos --;
         }

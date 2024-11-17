@@ -1,5 +1,5 @@
 let tempoInicial;
-let duracao = 100 * 1000; // 40 segundos em milissegundos
+let duracao = 40 * 1000; // 40 segundos em milissegundos
 let tempoRestante;
 
 // Função para mostrar o temporizador
@@ -9,7 +9,7 @@ function incluiTemporizador() {
     fill(color(255, 240, 60));
     text(`Tempo: ${ceil(tempoRestante / 1000)}s`, width / 2, 27);
 }
-
+// Função pra exibir a pontuação final do jogo
 function score(){
     textAlign(CENTER);
     textSize(25);

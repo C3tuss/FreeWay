@@ -11,11 +11,14 @@ let imagemCoracao;
 
 //sons
 let somDaTrilha;
+let somDaTrilha2;
 let somDaColisao;
 let somDoPonto;
+let somDoGrito;
 
 
 function preload(){
+    //Carregar imagens
     imagemDaEstrada = loadImage("Imagens/estrada.png");
     imagemDoAtor = loadImage("Imagens/ator-1.png");
     imagemCarro1 = loadImage("Imagens/carro-1.png");
@@ -24,8 +27,12 @@ function preload(){
     imagemCarros = [imagemCarro1, imagemCarro2, imagemCarro3, imagemCarro1, imagemCarro2, imagemCarro3];
     imagemCoracao = loadImage("Imagens/coracao.png");
 
-    somDaTrilha = loadSound("sons/trilha.mp3");
-    somDaColisao = loadSound("sons/colidiu.mp3");
-    somDoPonto= loadSound("sons/pontos.wav");
+    // Carregar sons
+    somDaTrilha = loadSound("sons/trilha2.mp3");
+    somDaColisao = loadSound("sons/explosao.mp3");
+    somDoPonto = loadSound("sons/pontos.wav");
+    somDoGrito = loadSound("sons/grito.mp3");
+
+    
 }
 

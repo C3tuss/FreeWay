@@ -2,6 +2,8 @@ let jogoAtivo = true;
 
 function setup() {
     createCanvas(500, 400);
+    // Ajustar volume
+    somDaTrilha.setVolume(0.1);
     somDaTrilha.loop();
 
     // Inicializa o tempo
